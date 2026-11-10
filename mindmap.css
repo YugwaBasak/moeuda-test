@@ -22,3 +22,8 @@
 .mm-mode #mmMain{display:block!important}
 @media(min-width:850px){.mm-editor.expanded .mm-editor-body{flex-direction:row-reverse}.mm-editor.expanded .mm-tools{width:105px;align-content:flex-start;flex-direction:column;border-top:0;border-right:1px solid var(--line,#ddd);overflow:auto}.mm-editor.expanded .mm-tools button{width:100%}}
 @media(max-width:650px){#mmOverlay{padding:7px}.mm-editor{height:min(650px,89dvh)}.mm-editor.expanded{height:100dvh}.mm-node{font-size:12px}.mm-tools button{font-size:12px;padding:7px}.mm-actions{bottom:6px}.mm-minimap{width:125px;height:90px}}
+
+/* v1.1.3 node manipulation */
+.mm-stage.mm-dragging-node .mm-node:not(.mm-moving),.mm-stage.mm-dragging-node .mm-group,.mm-stage.mm-dragging-node #mmLines{opacity:.3}
+.mm-stage.mm-dragging-node .mm-node.mm-moving{opacity:1}
+.mm-node-text{overflow-wrap:break-word;word-break:keep-all;white-space:pre-wrap}
